@@ -9,17 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-  behaviors {
-
+    behaviors {
         gt_lt: greater_less_than {
             compatible = "zmk,behavior-mod-morph";
             label = "GT_LT";
             #binding-cells = <0>;
             bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
-
 
     macros {
         mon_sw: mon_sw {
@@ -128,7 +127,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y    &kp U      &kp I      &kp O    &kp P      &kp ESC
 &kp LSHFT  &kp A  &kp S  &kp D     &kp F      &kp G        &kp H    &kp J      &kp K      &kp L    &kp COLON  &kp DOUBLE_QUOTES
-&kp LCTL   &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH   &kp RALT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH   &kp RALT
                          &kp LGUI  &mo LOWER  &kp SPACE    &kp RET  &mo RAISE  &kp BSPC
             >;
         };
