@@ -9,6 +9,18 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+  behaviors {
+
+        gt_lt: greater_less_than {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GT_LT";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+
     macros {
         mon_sw: mon_sw {
             compatible = "zmk,behavior-macro";
@@ -132,7 +144,7 @@
 
         raise_layer {
             bindings = <
-&kp BSLH  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
+&kp BSLH  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &gt_lt
 &trans    &kp N1     &kp N2    &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
 &none     &kp MINUS  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT     &kp UNDER  &kp PLUS  &kp LBRC  &trans    &trans    &kp GRAVE
                                &kp LGUI  &trans    &kp SPACE    &kp DEL    &trans    &kp RET
