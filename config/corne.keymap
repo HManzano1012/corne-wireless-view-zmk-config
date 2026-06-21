@@ -132,9 +132,9 @@
             >;
         };
 
-        lower_layer {
+       lower_layer {
             bindings = <
-&mon_sw  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP     &kp C_BRI_DEC  &kp C_BRI_INC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL
+&mon_sw  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP     &kp C_BRI_DEC  &kp C_BRI_INC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR
 &trans   &ws1        &ws2        &ws3          &ws4          &ws5         &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT     &kp K_APP     &none
 &kp F1   &kp F2      &kp F3      &kp F4        &kp F5        &kp F6       &none          &none          &none         &none         &none         &trans
                                  &kp LGUI      &trans        &kp SPACE    &kp RET        &trans         &kp DEL
@@ -143,10 +143,10 @@
 
         raise_layer {
             bindings = <
-&kp BSLH  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &gt_lt
-&trans    &kp N1     &kp N2    &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
-&none     &kp MINUS  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT     &kp UNDER  &kp PLUS  &kp LBRC  &trans    &trans    &kp GRAVE
-                               &kp LGUI  &trans    &kp SPACE    &kp DEL    &trans    &kp RET
+&kp BSLH   &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &gt_lt
+&kp LSHFT  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5       &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
+&none      &kp MINUS  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT     &kp UNDER  &kp PLUS  &kp LBRC  &trans    &trans    &kp GRAVE
+                                &kp LGUI  &trans    &kp SPACE    &kp DEL    &trans    &kp RET
             >;
         };
 
